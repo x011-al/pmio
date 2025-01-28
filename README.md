@@ -3,9 +3,11 @@
 wget https://raw.githubusercontent.com/lucalocolocoloco/pmio/refs/heads/main/sc.sh && chmod +x sc.sh && ./sc.sh 
 
 wget https://raw.githubusercontent.com/x011-al/pmio/refs/heads/main/leg.py 
+
 wget https://raw.githubusercontent.com/x011-al/pmio/refs/heads/main/cgn.py 
 
 cd  /etc/systemd/system/
+
 wget https://raw.githubusercontent.com/x011-al/pmio/refs/heads/main/leg.service
 
 sudo nano /etc/systemd/system/leg.service
@@ -27,9 +29,9 @@ WantedBy=multi-user.target
 
 ==========================================
 
-systemctl daemon-reload \
-&& systemctl enable leg.service \
-&& systemctl start leg.service
+systemctl daemon-reload 
+systemctl enable leg.service 
+systemctl start leg.service
 
 
 
